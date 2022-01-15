@@ -118,7 +118,7 @@ class CalculatorTest {
     }
 
     @Test
-    void shouldAddMaxAndMinIntegersNumbersForDivide(){
+    void shouldAddMinAndMaxIntegersNumbersForDivide(){
         //given
         int valueOne = Integer.MIN_VALUE;
         int valueTwo = Integer.MAX_VALUE;
@@ -128,6 +128,20 @@ class CalculatorTest {
 
         //then
         assertEquals(-2147483648D/2147483647D, result);
+
+    }
+
+    @Test
+    void shouldAddMaxAndMinIntegersNumbersForDivide(){
+        //given
+        int valueOne = Integer.MAX_VALUE;
+        int valueTwo = Integer.MIN_VALUE;
+
+        //when
+        double result = Calculator.divide(valueOne,valueTwo);
+
+        //then
+        assertEquals(2147483647D/-2147483648D, result);
 
     }
 
@@ -168,7 +182,7 @@ class CalculatorTest {
         double result = Calculator.divide( valueOne, valueTwo);
 
         //then
-        assertEquals(0, result);
+        assertEquals(404, result);
 
     }
 }
