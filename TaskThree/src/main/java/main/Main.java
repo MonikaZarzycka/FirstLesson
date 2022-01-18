@@ -16,6 +16,11 @@ public class Main
         System.out.println("Task four");
         System.out.println(" ");
         System.out.println( AgeVerification.age((byte)18));
-
+        System.out.println(" ");
+        System.out.println("________________________________________________");
+        System.out.println("Task five ");
+        System.out.println(" ");
+        System.out.println(IsEven.evenNumber(18));
+        System.out.println(IsNotEven.notEvenNumber(15));
     }
 }
