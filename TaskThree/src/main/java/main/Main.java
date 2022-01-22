@@ -22,5 +22,11 @@ public class Main
         System.out.println(" ");
         System.out.println(IsEven.evenNumber(18));
         System.out.println(IsNotEven.notEvenNumber(15));
+        System.out.println(" ");
+        System.out.println("________________________________________________");
+        System.out.println("Task six ");
+        System.out.println(" ");
+        Week.printWeek(5);
     }
+
 }
