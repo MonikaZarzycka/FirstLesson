@@ -1,13 +1,4 @@
 package main;
-//Zaimplementuj metodę, która na podstawie argumentu wejściowego (liczba całkowita) zwróci nazwę dnia tygodnia. Jeżeli argument wejściowy jest równy
-
-  //      ●     1 - 5 wówczas metoda powinna zwrócić dzień tygodnia, np. “Monday”,
-
-    //    ●     6 lub 7 metoda powinna zwrócić “Weekend”
-
-      //  ●     >7 metoda zwraca komunikat “There is no such a day!”
-
-//        Do powstałego kodu należy również dopisać testy jednostkowe.
 
 public class Week {
         public static int printWeek (int daysOfTheWeek) {
