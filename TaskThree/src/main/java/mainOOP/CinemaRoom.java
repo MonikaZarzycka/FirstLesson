@@ -3,16 +3,11 @@ package mainOOP;
 public class CinemaRoom {
     private final int chairNumber;
     private final int theRowNumberOfChair;
-    public String condition;
+    public boolean condition;
 
-    public String getCondition() {
-        return this.condition;
-    }
-
-    public void setCondition(String condition) {
+    public void setCondition(boolean condition) {
         this.condition = condition;
     }
-
 
     public int getChairNumber() {
         return this.chairNumber;
@@ -27,4 +22,12 @@ public class CinemaRoom {
         this.theRowNumberOfChair = theRowNumberOfChair;
     }
 
+    public String getSeatCondition (boolean condition){
+        if(condition)
+        return "Free";
+        else
+        return "Taken";
+    }
+
 }
+
