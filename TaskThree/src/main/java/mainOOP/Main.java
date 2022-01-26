@@ -8,7 +8,5 @@ public class Main {
         System.out.println(cinemaChair.getNumber());
         System.out.println(cinemaChair.getRow());
         cinemaChair.isSeatTaken();
-
-
     }
 }
