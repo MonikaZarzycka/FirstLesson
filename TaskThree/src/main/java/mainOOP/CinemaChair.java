@@ -27,12 +27,4 @@ public class CinemaChair {
         this.row = row;
     }
 
-    public void isSeatTaken() {
-    if(getAvailable()){
-        System.out.println("It's free");
-    }
-    else {
-        System.out.println("No it's taken");
-        }
-    }
 }

@@ -7,6 +7,6 @@ public class Main {
         cinemaChair.setAvailable(true);
         System.out.println(cinemaChair.getNumber());
         System.out.println(cinemaChair.getRow());
-        cinemaChair.isSeatTaken();
+        System.out.println(cinemaChair.getAvailable());
     }
 }
