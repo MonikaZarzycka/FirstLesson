@@ -31,5 +31,12 @@ public class Main {
         System.out.println(ticketSeller.getName()+" "+ticketSeller.getSurname());
         System.out.println(ticketSeller.calculateMonthlySalary());
         System.out.println(ticketSeller.getYearOfEmployment());
+        System.out.println(" ");
+        System.out.println("_________________________________________");
+        System.out.println(" ");
+        Converter converter = new Converter(5);
+        System.out.println(converter.getMinutes());
+        System.out.println(Converter.minutesToSeconds());
+
     }
 }
