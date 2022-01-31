@@ -19,6 +19,6 @@ class Manager extends BaseEmployee{
 
     @Override
     public int calculateMonthlySalary() {
-        return 0;
+        return baseSalary+bonus;
     }
 }

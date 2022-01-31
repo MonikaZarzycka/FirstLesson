@@ -23,15 +23,13 @@ public class Main {
         System.out.println(" ");
         Manager manager = new Manager("Bob", "Brown",2014);
         System.out.println(manager.getName()+" "+manager.getSurname());
-        System.out.println(manager.getBaseSalary());
-        System.out.println(manager.getBonus());
+        System.out.println(manager.calculateMonthlySalary());
         System.out.println(manager.getYearOfEmployment());
         System.out.println(" ");
         System.out.println("Ticket Sellers");
-        System.out.println(" ");
         TicketSeller ticketSeller = new TicketSeller("Noah","Cameron",2005);
         System.out.println(ticketSeller.getName()+" "+ticketSeller.getSurname());
-        System.out.println(ticketSeller.getBaseSalary());
+        System.out.println(ticketSeller.calculateMonthlySalary());
         System.out.println(ticketSeller.getYearOfEmployment());
     }
 }

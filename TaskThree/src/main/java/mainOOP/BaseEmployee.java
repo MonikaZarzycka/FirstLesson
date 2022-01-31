@@ -6,12 +6,13 @@ abstract class BaseEmployee {
     private String surname;
     protected int baseSalary;
     private int yearOfEmployment;
+    private static final int CURRENT_YEAR=2022;
 
     public BaseEmployee(String name, String surname, int baseSalary, int yearOfEmployment) {
         this.name = name;
         this.surname = surname;
         this.baseSalary = baseSalary;
-        this.yearOfEmployment = yearOfEmployment;
+        this.yearOfEmployment = CURRENT_YEAR - yearOfEmployment;
     }
 
     public String getName() {
@@ -20,10 +21,6 @@ abstract class BaseEmployee {
 
     public String getSurname() {
         return surname;
-    }
-
-    public int getBaseSalary() {
-        return baseSalary;
     }
 
     public int getYearOfEmployment() {
