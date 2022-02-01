@@ -29,20 +29,31 @@ class RectangularTriangleTest {
     }
 
     @Test
-    void shouldReturnTrueWhen82_80_18() {
+    void shouldReturnFalseWhen5_4_3() {
         //given
-        RectangularTriangle rectangularTriangle = new RectangularTriangle(82, 80, 18);
+        RectangularTriangle rectangularTriangle = new RectangularTriangle(5, 4, 3);
         boolean result;
         //when
         result = RectangularTriangle.pythagoreanTheorem();
         //then
-        assertTrue(result);
+        assertFalse(result);
     }
 
     @Test
-    void shouldReturnTrueWhen543() {
+    void shouldReturnFalseWhen4_5_3() {
         //given
-        RectangularTriangle rectangularTriangle = new RectangularTriangle(5, 4, 3);
+        RectangularTriangle rectangularTriangle = new RectangularTriangle(4, 5, 3);
+        boolean result;
+        //when
+        result = RectangularTriangle.pythagoreanTheorem();
+        //then
+        assertFalse(result);
+    }
+
+    @Test
+    void shouldReturnTrueWhen18_80_82() {
+        //given
+        RectangularTriangle rectangularTriangle = new RectangularTriangle(18, 80, 82);
         boolean result;
         //when
         result = RectangularTriangle.pythagoreanTheorem();
