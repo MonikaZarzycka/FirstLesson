@@ -17,5 +17,20 @@ public class Main {
         System.out.println(movie.getMinutesLong());
         System.out.println(movie.getYear());
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
