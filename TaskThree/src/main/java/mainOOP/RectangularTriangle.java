@@ -2,33 +2,27 @@ package mainOOP;
 import java.lang.Math;
 public class RectangularTriangle {
 
-    private static int hypotenuse;
-    private static int firstCathetus;
-    private static int secondCathetus;
+    private static int a;
+    private static int b;
+    private static int c;
 
-    public RectangularTriangle(int hypotenuse, int firstCathetus, int secondCathetus) {
-        RectangularTriangle.hypotenuse=hypotenuse;
-        RectangularTriangle.firstCathetus=firstCathetus;
-        RectangularTriangle.secondCathetus=secondCathetus;
+    public RectangularTriangle(int a, int b, int c) {
+        RectangularTriangle.c=c;
+        RectangularTriangle.a=a;
+        RectangularTriangle.b=b;
     }
 
-    public static int getHypotenuse() {
-        return hypotenuse;
+    public static boolean isNotNegative(){
+        return a > 0 && b > 0 && c > 0;
     }
 
-    public static int getFirstCathetus() {
-        return firstCathetus;
+    public static boolean pythagoreanTheorem() {
+        return isNotNegative() && a*a+b*b==c*c;
     }
-
-    public static int getSecondCathetus() {
-        return secondCathetus;
-    }
-
-    public static boolean isNotNegative(boolean is){
-        return hypotenuse > 0 && firstCathetus > 0 && secondCathetus > 0;
-    }
-
-    public static boolean PythagoreanTheorem() {
-        return isNotNegative(true) && hypotenuse * hypotenuse == firstCathetus * firstCathetus + secondCathetus * secondCathetus;
+}
+class MathMain{
+    public static void main(String[] args) {
+        RectangularTriangle rectangularTriangle = new RectangularTriangle(5,4,3);
+        System.out.println(RectangularTriangle.pythagoreanTheorem());
     }
 }

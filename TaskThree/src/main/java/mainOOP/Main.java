@@ -16,35 +16,5 @@ public class Main {
         System.out.println(movie.getDirectorName() + " " + movie.getDirectorSurname());
         System.out.println(movie.getMinutesLong());
         System.out.println(movie.getYear());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        System.out.println(" ");
-        System.out.println("_________________________________________");
-        System.out.println(" ");
-        RectangularTriangle rectangularTriangle = new RectangularTriangle(5,4,3);
-        System.out.println(RectangularTriangle.getHypotenuse());
-        System.out.println(RectangularTriangle.getFirstCathetus());
-        System.out.println(RectangularTriangle.getSecondCathetus());
-        System.out.println(RectangularTriangle.PythagoreanTheorem());
-
-
     }
 }
