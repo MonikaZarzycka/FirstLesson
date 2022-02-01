@@ -36,6 +36,5 @@ public class Main {
         Convert convert = new Convert(2);
         System.out.println(convert.getMinutes());
         System.out.println(Convert.minutesToSeconds());
-
     }
 }
