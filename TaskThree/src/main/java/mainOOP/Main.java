@@ -20,7 +20,6 @@ public class Main {
         System.out.println("_________________________________________");
         System.out.println(" ");
         System.out.println("Managers");
-        System.out.println(" ");
         Manager manager = new Manager("Bob", "Brown",2014);
         System.out.println(manager.getName()+" "+manager.getSurname());
         System.out.println(manager.calculateMonthlySalary());
