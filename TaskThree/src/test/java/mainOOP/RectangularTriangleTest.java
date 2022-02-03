@@ -12,7 +12,7 @@ class RectangularTriangleTest {
         RectangularTriangle rectangularTriangle = new RectangularTriangle(3,4,5);
         boolean result;
         //when
-        result = RectangularTriangle.pythagoreanTheorem();
+        result = rectangularTriangle.pythagoreanTheorem();
         //then
         assertTrue(result);
     }
@@ -23,7 +23,7 @@ class RectangularTriangleTest {
         RectangularTriangle rectangularTriangle = new RectangularTriangle(4,3,5);
         boolean result;
         //when
-        result = RectangularTriangle.pythagoreanTheorem();
+        result = rectangularTriangle.pythagoreanTheorem();
         //then
         assertTrue(result);
     }
@@ -34,7 +34,7 @@ class RectangularTriangleTest {
         RectangularTriangle rectangularTriangle = new RectangularTriangle(5, 4, 3);
         boolean result;
         //when
-        result = RectangularTriangle.pythagoreanTheorem();
+        result = rectangularTriangle.pythagoreanTheorem();
         //then
         assertFalse(result);
     }
@@ -45,7 +45,7 @@ class RectangularTriangleTest {
         RectangularTriangle rectangularTriangle = new RectangularTriangle(4, 5, 3);
         boolean result;
         //when
-        result = RectangularTriangle.pythagoreanTheorem();
+        result = rectangularTriangle.pythagoreanTheorem();
         //then
         assertFalse(result);
     }
@@ -56,7 +56,7 @@ class RectangularTriangleTest {
         RectangularTriangle rectangularTriangle = new RectangularTriangle(18, 80, 82);
         boolean result;
         //when
-        result = RectangularTriangle.pythagoreanTheorem();
+        result = rectangularTriangle.pythagoreanTheorem();
         //then
         assertTrue(result);
     }
@@ -67,7 +67,7 @@ class RectangularTriangleTest {
         RectangularTriangle rectangularTriangle = new RectangularTriangle(0, 0, 0);
         boolean result;
         //when
-        result = RectangularTriangle.pythagoreanTheorem();
+        result = rectangularTriangle.pythagoreanTheorem();
         //then
         assertFalse(result);
     }
@@ -78,7 +78,7 @@ class RectangularTriangleTest {
         RectangularTriangle rectangularTriangle = new RectangularTriangle(5, 0, 5);
         boolean result;
         //when
-        result = RectangularTriangle.pythagoreanTheorem();
+        result = rectangularTriangle.pythagoreanTheorem();
         //then
         assertFalse(result);
     }
@@ -89,7 +89,7 @@ class RectangularTriangleTest {
         RectangularTriangle rectangularTriangle = new RectangularTriangle(4, 4, 0);
         boolean result;
         //when
-        result = RectangularTriangle.pythagoreanTheorem();
+        result = rectangularTriangle.pythagoreanTheorem();
         //then
         assertFalse(result);
     }
@@ -100,7 +100,7 @@ class RectangularTriangleTest {
         RectangularTriangle rectangularTriangle = new RectangularTriangle(0, 4, 3);
         boolean result;
         //when
-        result = RectangularTriangle.pythagoreanTheorem();
+        result = rectangularTriangle.pythagoreanTheorem();
         //then
         assertFalse(result);
     }
@@ -111,7 +111,7 @@ class RectangularTriangleTest {
         RectangularTriangle rectangularTriangle = new RectangularTriangle(Integer.MAX_VALUE, Integer.MIN_VALUE, Integer.MAX_VALUE);
         boolean result;
         //when
-        result = RectangularTriangle.pythagoreanTheorem();
+        result = rectangularTriangle.pythagoreanTheorem();
         //then
         assertFalse(result);
     }
