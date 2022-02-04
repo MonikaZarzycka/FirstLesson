@@ -1,19 +1,20 @@
 package mainOOP;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
 
     public Cat(String name) {
         super(name);
     }
 
-    public String getCatName(){
+    @Override
+    public String getName() {
         return super.getName();
     }
 }
 
-class AnimalMain{
+class AnimalMain {
     public static void main(String[] args) {
         Cat cat = new Cat("Mushu");
-        System.out.println(cat.getCatName());
+        System.out.println(cat.getName());
     }
 }
