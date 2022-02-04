@@ -6,10 +6,6 @@ public class Cat extends Animal {
         super(name);
     }
 
-    @Override
-    public String getName() {
-        return super.getName();
-    }
 }
 
 class AnimalMain {
