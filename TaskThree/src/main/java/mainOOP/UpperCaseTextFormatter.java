@@ -1,6 +1,6 @@
 package mainOOP;
 
-public class FirstFormat implements TextFormatter{
+public class UpperCaseTextFormatter implements TextFormatter{
 
     @Override
     public String formatText(String text) {

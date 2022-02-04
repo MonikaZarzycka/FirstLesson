@@ -4,14 +4,14 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class FirstFormatTest {
+class UpperCaseTextFormatterTest {
 
     @Test
     void shouldBeTheSame(){
         //given
-        FirstFormat firstFormat = new FirstFormat();
+        UpperCaseTextFormatter upperCaseTextFormatter = new UpperCaseTextFormatter();
         //when
-        String result = firstFormat.formatText("TEXT");
+        String result = upperCaseTextFormatter.formatText("TEXT");
         //then
         assertEquals("TEXT", result);
     }
@@ -19,9 +19,9 @@ class FirstFormatTest {
     @Test
     void shouldBeUpperCase(){
         //given
-        FirstFormat firstFormat = new FirstFormat();
+        UpperCaseTextFormatter upperCaseTextFormatter = new UpperCaseTextFormatter();
         //when
-        String result = firstFormat.formatText("Split TEXT");
+        String result = upperCaseTextFormatter.formatText("Split TEXT");
         //then
         assertEquals("SPLIT TEXT", result);
     }
@@ -29,9 +29,9 @@ class FirstFormatTest {
     @Test
     void shouldBeUpperCaseWhenRandom(){
         //given
-        FirstFormat firstFormat = new FirstFormat();
+        UpperCaseTextFormatter upperCaseTextFormatter = new UpperCaseTextFormatter();
         //when
-        String result = firstFormat.formatText("SoMe WeiRD TExT");
+        String result = upperCaseTextFormatter.formatText("SoMe WeiRD TExT");
         //then
         assertEquals("SOME WEIRD TEXT", result);
     }
@@ -39,9 +39,9 @@ class FirstFormatTest {
     @Test
     void shouldBeUpperCaseWhenNormalAndUpper(){
         //given
-        FirstFormat firstFormat = new FirstFormat();
+        UpperCaseTextFormatter upperCaseTextFormatter = new UpperCaseTextFormatter();
         //when
-        String result = firstFormat.formatText("Split TEXT");
+        String result = upperCaseTextFormatter.formatText("Split TEXT");
         //then
         assertEquals("SPLIT TEXT", result);
     }
@@ -49,9 +49,9 @@ class FirstFormatTest {
     @Test
     void shouldBeUpperCaseWhenFirstLetterIsBig(){
         //given
-        FirstFormat firstFormat = new FirstFormat();
+        UpperCaseTextFormatter upperCaseTextFormatter = new UpperCaseTextFormatter();
         //when
-        String result = firstFormat.formatText("Certain Text Is Formatted");
+        String result = upperCaseTextFormatter.formatText("Certain Text Is Formatted");
         //then
         assertEquals("CERTAIN TEXT IS FORMATTED", result);
     }

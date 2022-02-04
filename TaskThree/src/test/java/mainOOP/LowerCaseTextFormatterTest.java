@@ -4,14 +4,14 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SecondFormatTest {
+class LowerCaseTextFormatterTest {
 
     @Test
     void shouldBeTheSame(){
         //given
-        SecondFormat secondFormat = new SecondFormat();
+        LowerCaseTextFormatter lowerCaseTextFormatter = new LowerCaseTextFormatter();
         //when
-        String result = secondFormat.formatText("text");
+        String result = lowerCaseTextFormatter.formatText("text");
         //then
         assertEquals("text", result);
     }
@@ -19,9 +19,9 @@ class SecondFormatTest {
     @Test
     void shouldBeLowerCase(){
         //given
-        SecondFormat secondFormat = new SecondFormat();
+        LowerCaseTextFormatter lowerCaseTextFormatter = new LowerCaseTextFormatter();
         //when
-        String result = secondFormat.formatText("Split TEXT");
+        String result = lowerCaseTextFormatter.formatText("Split TEXT");
         //then
         assertEquals("split text", result);
     }
@@ -29,9 +29,9 @@ class SecondFormatTest {
     @Test
     void shouldBeLowerCaseWhenRandom(){
         //given
-        SecondFormat secondFormat = new SecondFormat();
+        LowerCaseTextFormatter lowerCaseTextFormatter = new LowerCaseTextFormatter();
         //when
-        String result = secondFormat.formatText("SoMe WeiRD TExT");
+        String result = lowerCaseTextFormatter.formatText("SoMe WeiRD TExT");
         //then
         assertEquals("some weird text", result);
     }
@@ -39,9 +39,9 @@ class SecondFormatTest {
     @Test
     void shouldBeLowerCaseWhenNormalAndUpper(){
         //given
-        SecondFormat secondFormat = new SecondFormat();
+        LowerCaseTextFormatter lowerCaseTextFormatter = new LowerCaseTextFormatter();
         //when
-        String result = secondFormat.formatText("Split TEXT");
+        String result = lowerCaseTextFormatter.formatText("Split TEXT");
         //then
         assertEquals("split text", result);
     }
@@ -49,9 +49,9 @@ class SecondFormatTest {
     @Test
     void shouldBeLowerCaseWhenTextIsUpperCase(){
         //given
-        SecondFormat secondFormat = new SecondFormat();
+        LowerCaseTextFormatter lowerCaseTextFormatter = new LowerCaseTextFormatter();
         //when
-        String result = secondFormat.formatText("Certain Text Is Formatted");
+        String result = lowerCaseTextFormatter.formatText("Certain Text Is Formatted");
         //then
         assertEquals("certain text is formatted", result);
     }
