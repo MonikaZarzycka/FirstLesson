@@ -1,8 +1,16 @@
 package Week;
 
 public class ShowDays {
-    
-   Days.DaysOfWeek daysOfWeek = Days.DaysOfWeek.MONDAY;
-    
-    
+
+   private DaysOfWeek days;
+
+   public ShowDays (DaysOfWeek days){
+      this.days=days;
+   }
+
+   public static void main(String[] args) {
+      ShowDays showDays = new ShowDays(DaysOfWeek.MONDAY);
+      System.out.println(showDays.days);
+   }
+
 }

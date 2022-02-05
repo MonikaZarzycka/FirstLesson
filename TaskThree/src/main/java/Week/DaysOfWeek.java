@@ -1,8 +1,6 @@
 package Week;
 
-public class Days {
-
-    public enum DaysOfWeek{
+    enum DaysOfWeek{
         MONDAY,
         TUESDAY,
         WEDNESDAY,
@@ -13,4 +11,4 @@ public class Days {
     }
 
 
-}
+
