@@ -2,10 +2,15 @@ package BetterCalculator;
 
 public class CalculatorMain {
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
-        System.out.println(calculator.sum(2, 2));
-        System.out.println(calculator.subtract(4, 2));
-        System.out.println(calculator.multiply(3, 2));
-        System.out.println(calculator.divide(6, 3));
+
+        Sum sum = new Sum(2, 2);
+        Subtract subtract = new Subtract(4,2);
+        Multiply multiply = new Multiply(3, 2);
+        Divide divide = new Divide(6, 3);
+
+        System.out.println(sum.getResult());
+        System.out.println(subtract.getResult());
+        System.out.println(multiply.getResult());
+        System.out.println(divide.getResult());
     }
 }
