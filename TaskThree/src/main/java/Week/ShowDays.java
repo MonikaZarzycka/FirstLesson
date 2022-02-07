@@ -2,15 +2,13 @@ package Week;
 
 public class ShowDays {
 
-   private DaysOfWeek days;
-
-   public ShowDays (DaysOfWeek days){
-      this.days=days;
+   public static String GetDay (DaysOfWeek days){
+      return String.valueOf(days);
    }
-
-   public static void main(String[] args) {
-      ShowDays showDays = new ShowDays(DaysOfWeek.MONDAY);
-      System.out.println(showDays.days);
-   }
-
 }
+ class MAinDays{
+    public static void main(String[] args) {
+       DaysOfWeek days = DaysOfWeek.MONDAY;
+       System.out.println(ShowDays.GetDay(DaysOfWeek.MONDAY));
+    }
+ }
