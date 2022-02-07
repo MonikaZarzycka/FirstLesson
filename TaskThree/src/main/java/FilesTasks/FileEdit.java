@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Scanner;
 
 
 public class FileEdit {
@@ -21,8 +20,8 @@ public class FileEdit {
 
         Files.writeString(Path.of("src/main/resources/data.txt"), course  + java  + lesson + files  + exceptions + files + endOfFile);
 
-        BetterFileReader.readFromFile("src/main/resources/data.txt");
-        inEveryOtherLine.EveryOtherLine("src/main/resources/data.txt");
+        BetterFileReader.showCharactersFromFile("src/main/resources/data.txt");
+        InEveryOtherLine.everyOtherLine("src/main/resources/data.txt");
 
 
 
