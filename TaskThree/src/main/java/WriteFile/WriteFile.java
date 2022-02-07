@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 class ReadMain {
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("src/main/java/WriteFile/data.txt");
+        File file = new File("src/main/java/data.txt");
         Scanner in = new Scanner(file);
 
         String task = in.nextLine();
