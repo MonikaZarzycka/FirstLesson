@@ -5,3 +5,5 @@ Pliki
 Wyjątki
 Pliki
 Koniec pliku
+
+
