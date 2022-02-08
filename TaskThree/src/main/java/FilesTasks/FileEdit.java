@@ -9,15 +9,24 @@ import java.nio.file.Path;
 public class FileEdit {
     public static void main(String[] args) throws IOException {
 
-        File file = new File("src/main/resources/data.txt");
+        File file = new File("src/main/resources");
 
-        String course = "Kurs";
-        String java = "Java";
-        String lesson = "Lekcja 6";
-        String files = "Pliki";
-        String exceptions = "Wyjątki";
-        String endOfFile = "Koniec pliku";
+        String course = "Kurs\n";
+        String java = "Java\n";
+        String lesson = "Lekcja \n";
+        String files = "Pliki\n";
+        String exceptions = "Wyjątki\n";
+        String endOfFile = "Koniec pliku\n";
 
-        Files.writeString(Path.of("src/main/resources/data.txt"), course + " " + java + " " + lesson + " " + files + " " + exceptions + " " + files + " " + endOfFile);
+        Files.writeString(Path.of("src/main/resources/data.txt"), course  + java  + lesson + files  + exceptions + files + endOfFile);
+
+        BetterFileReader.showCharactersFromFile("src/main/resources/data.txt");
+        InEveryOtherLine.everyOtherLine("src/main/resources/data.txt");
+
+
+
+
+
+
     }
 }
