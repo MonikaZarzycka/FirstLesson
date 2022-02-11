@@ -3,32 +3,29 @@ package ParamsMockito;
 import java.time.Month;
 
 public class ShowSeason {
-    public static String getSeason(Month month) {
+    public static Seasons getSeason (Month month) {
         if (month == null) {
-            return "";
+            throw new IllegalArgumentException("Month cannot be null");
         }
-        String season = "";
         switch (month) {
             case DECEMBER:
             case JANUARY:
             case FEBRUARY:
-                season = Seasons.WINTER.toString();
-                break;
+                return Seasons.WINTER;
             case MARCH:
             case APRIL:
             case MAY:
-                season = Seasons.SPRING.toString();
-                break;
+                return Seasons.SPRING;
             case JUNE:
             case JULY:
             case AUGUST:
-                season = Seasons.SUMMER.toString();
-                break;
+                return Seasons.SUMMER;
             case SEPTEMBER:
             case OCTOBER:
             case NOVEMBER:
-                season = Seasons.AUTUMN.toString();
+                return Seasons.AUTUMN;
+            default: throw new IllegalArgumentException();
         }
-        return season;
+
     }
 }
